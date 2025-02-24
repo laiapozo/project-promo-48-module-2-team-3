@@ -1,10 +1,19 @@
 <section class="sticker-create">
   <div class="form-div">
     <form class="form" action="" method="">
-      <fieldset class="form__fill">Rellena</fieldset>
+      <fieldset class="form__fill">
+        <p><i class="fa-solid fa-pen"></i> Rellena</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-fill">
         <label for="image">Sube tu imagen</label>
-        <input type="file" id="image" name="image" accept="image/*" />
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          class="div-fill__img"
+        />
         <label for="desperation"
           >Indica tu nivel de desesperación del 1 al 10</label
         >
@@ -14,9 +23,10 @@
           name="desperation"
           min="0"
           max="10"
+          class="div-fill__desperation"
         />
         <label for="sentence">Escoge la frase que mejor te represente</label>
-        <select name="sentence" id="sentence">
+        <select name="sentence" id="sentence" class="div-fill__sentence">
           <option value="select">Selecciona tu frase</option>
           <option value="process">Confía en el proceso</option>
           <option value="reverse">Me siento un poco column-reverse</option>
@@ -31,10 +41,14 @@
           name="author"
           id="author"
           placeholder="Creado por Ada"
+          class="div-fill__author"
         />
       </div>
 
-      <fieldset class="form__design">Diseña</fieldset>
+      <fieldset class="form__design">
+        <p><i class="fa-solid fa-palette"></i> Diseña</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-design">
         <legend>Indica el tamaño de la letra</legend>
         <div>
@@ -56,7 +70,10 @@
         </div>
       </div>
 
-      <fieldset class="form__share">Comparte</fieldset>
+      <fieldset class="form__share">
+        <p><i class="fa-solid fa-share-nodes"></i> Comparte</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-share">
         <button>Crear sticker</button>
         <p>¡Ya tienes aquí tu sticker!</p>
@@ -77,7 +94,7 @@
         />
       </div>
       <p>Frase escogida</p>
-      <p>Creado por </p>
+      <p>Creado por</p>
     </div>
   </div>
 </section>

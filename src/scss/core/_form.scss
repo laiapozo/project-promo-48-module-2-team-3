@@ -1,7 +1,11 @@
 .sticker-create {
   display: flex;
   flex-direction: column-reverse;
-  font-family: sans-serif;
+  font-family: "Roboto";
+}
+
+.form-div {
+  padding: 0 10px;
 }
 
 .img-div {
@@ -25,33 +29,58 @@
   flex-direction: column;
   gap: 15px;
 
-  &__fill, &__design, &__share {
+  &__fill,
+  &__design,
+  &__share {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 350;
     border: none;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .div-fill {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 0 10px 10px;
+  font-size: 14px;
+
+  &__img {
+    color: grey;
+    &::file-selector-button {
+      background-color: grey;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  &__desperation, &__sentence, &__author {
+    padding: 5px;
+    border: grey solid 1px;
+    border-radius: 5px;
+  }
 }
 
 .div-design {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 0 10px 10px;
+  font-size: 14px;
 }
 
 .div-share {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  gap: 10px;
   padding: 0 10px 10px;
+  font-size: 14px;
 }
