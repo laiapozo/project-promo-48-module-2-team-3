@@ -1,48 +1,57 @@
 .sticker-create {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.form-div {
-    border: 1px solid black;
-    padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: sans-serif;
 }
 
 .img-div {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px auto;
-      &__box {
-        &__image {
-            width: 150px;
-        }
-      }
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px auto;
+
+  &__box {
+    &__image {
+      width: 150px;
+    }
+  }
 }
 
 .img-result {
-    width: 100%;
+  width: 100%;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__fill, &__design, &__share {
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 10px;
+  }
 }
 
 .div-fill {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 10px 10px;
 }
 
 .div-design {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 10px 10px;
 }
 
 .div-share {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 10px 10px;
 }
