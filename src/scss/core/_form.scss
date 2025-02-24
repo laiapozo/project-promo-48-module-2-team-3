@@ -1,0 +1,48 @@
+.sticker-create {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form-div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.img-div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+      &__box {
+        &__image {
+            width: 150px;
+        }
+      }
+}
+
+.img-result {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.div-fill {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-design {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-share {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

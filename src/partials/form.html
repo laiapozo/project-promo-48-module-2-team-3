@@ -1,74 +1,71 @@
-<section>
-  <div>
-    <form action="" method="">
+<section class="sticker-create">
+  <div class="form-div">
+    <form class="form" action="" method="">
       <fieldset>Rellena</fieldset>
-      <label for="image">Sube tu imagen</label>
-      <input type="text" id="image" name="image" />
-      <label for="desperation"
-        >Indica tu nivel de desesperación del 1 al 10</label
-      >
-      <input
-        type="number"
-        id="desperation"
-        name="desperation"
-        min="1"
-        max="10"
-      />
-      <label for="sentence">Escoge la frase que mejor te represente</label>
-      <select name="sentence" id="sentence">
-        <option value="select">Selecciona tu frase</option>
-        <option value="process">Confía en el proceso</option>
-        <option value="reverse">Me siento un poco column-reverse</option>
-        <option value="process">Confía en el proceso</option>
-        <option value="reverse">Me siento un poco column-reverse</option>
-        <option value="process">Confía en el proceso</option>
-        <option value="reverse">Me siento un poco column-reverse</option>
-      </select>
-      <label for="author">Indica tu nombre</label>
-      <input
-        type="text"
-        name="author"
-        id="author"
-        placeholder="Creado por Ada"
-      />
+      <div class="div-fill">
+        <label for="image">Sube tu imagen</label>
+        <input type="text" id="image" name="image" />
+        <label for="desperation">Indica tu nivel de desesperación del 1 al 10</label>
+        <input type="number" id="desperation" name="desperation" min="1" max="10" />
+        <label for="sentence">Escoge la frase que mejor te represente</label>
+        <select name="sentence" id="sentence">
+          <option value="select">Selecciona tu frase</option>
+          <option value="process">Confía en el proceso</option>
+          <option value="reverse">Me siento un poco column-reverse</option>
+          <option value="process">Confía en el proceso</option>
+          <option value="reverse">Me siento un poco column-reverse</option>
+          <option value="process">Confía en el proceso</option>
+          <option value="reverse">Me siento un poco column-reverse</option>
+        </select>
+        <label for="author">Indica tu nombre</label>
+        <input type="text" name="author" id="author" placeholder="Creado por Ada" />
+      </div>
 
       <fieldset>Diseña</fieldset>
-      <legend>Indica el tamaño de la letra</legend>
-      <input type="radio" id="12" name="size" />
-      <label for="12">12</label>
-      <input type="radio" id="14" name="size" />
-      <label for="14">14</label>
-      <input type="radio" id="16" name="size" />
-      <label for="16">16</label>
-      <legend>Colores</legend>
-      <input type="radio" id="option1" name="colors">
-      <label for="option1">Opción 1</label>
-      <input type="radio" id="option2" name="colors">
-      <label for="option2">Opción 2</label>
-      <input type="radio" id="option3" name="colors">
-      <label for="option3">Opción 3</label>
+      <div class="div-design">
+        <legend>Indica el tamaño de la letra</legend>
+        <div>
+          <input type="radio" id="12" name="size" />
+        <label for="12">12</label>
+        <input type="radio" id="14" name="size" />
+        <label for="14">14</label>
+        <input type="radio" id="16" name="size" />
+        <label for="16">16</label>
+      </div>
+        <legend>Colores</legend>
+        <div><input type="radio" id="option1" name="colors">
+        <label for="option1">Opción 1</label>
+        <input type="radio" id="option2" name="colors">
+        <label for="option2">Opción 2</label>
+        <input type="radio" id="option3" name="colors">
+        <label for="option3">Opción 3</label>
+      </div>
+      </div>
 
       <fieldset>Comparte</fieldset>
-      <button>Crear sticker</button>
-      <p>El sticker ha sido creado:</p>
-      <a href=""></a>
-      <button>Compartir en WhatsApp</button>
+      <div class="div-share">
+        <button>Crear sticker</button>
+        <p>El sticker ha sido creado:</p>
+        <a href=""></a>
+        <button>Compartir en WhatsApp</button>
+      </div>
     </form>
   </div>
 
-  <div>
-    <div>
-        <p>7</p>
-        <div>
-            <img src="" alt="Sticker resultado">
-        </div>
-        <p>Frase escogida</p>
-        <p>Creado por</p>
+  <div class="img-div">
+    <div class="img-div__box">
+      <p>7</p>
+      <div class="img-div__box__image">
+        <img class="img-result" src="https://i.pinimg.com/550x/09/2a/93/092a93bd0e2f183f210e1840d2c126f4.jpg"
+          alt="Sticker resultado">
+      </div>
+      <p>Frase escogida</p>
+      <p>Creado por</p>
     </div>
   </div>
 </section>
 
 
-// Dudas
+<!-- // Dudas
 // Adjuntar imagen?
-// Paleta de colores?
+// Paleta de colores? -->
