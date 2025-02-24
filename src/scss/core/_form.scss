@@ -75,7 +75,7 @@
     color: grey;
 
     &::file-selector-button {
-      background-color: grey;
+      background-color: #c93825;
       color: white;
       padding: 10px;
       border: none;
@@ -119,7 +119,7 @@
   font-size: 14px;
 
   &__button {
-    background-color: grey;
+    background-color: #c93825;
     color: white;
     text-transform: uppercase;
     padding: 15px;
@@ -162,6 +162,10 @@
     background-color: lightgray;
     color: white;
   }
+}
+
+.fa-pen, .fa-palette, .fa-share-nodes, .fa-caret-down {
+    color: #c93825;
 }
 
 @media (min-width: 768px) {
