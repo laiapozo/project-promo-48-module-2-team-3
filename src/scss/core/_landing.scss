@@ -15,7 +15,7 @@
     gap: 20px;
     border-radius: 2px;
     &__containerLogo{
-        width: 100px;
+        width: 300px;
         &__logo{
             width: 100%;
         }
@@ -41,6 +41,12 @@
         h1, p{
             text-align: center;
     }
+    }
+    &__containerImg{
+        width: 200px;
+        &__img{
+            width:100%;
+        }
     }
     &__containerbtn{
         margin-top: 80px;
