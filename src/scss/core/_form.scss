@@ -35,8 +35,8 @@
     text-transform: uppercase;
     font-weight: 350;
     border: none;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -52,18 +52,25 @@
 
   &__img {
     color: grey;
+
     &::file-selector-button {
       background-color: grey;
       color: white;
       padding: 10px;
       border: none;
       border-radius: 5px;
+
+      &:hover {
+        opacity: 80%;
+      }
     }
   }
 
-  &__desperation, &__sentence, &__author {
+  &__desperation,
+  &__sentence,
+  &__author {
     padding: 5px;
-    border: grey solid 1px;
+    border: lightgrey solid 1px;
     border-radius: 5px;
   }
 }
@@ -75,7 +82,8 @@
   padding: 0 10px 10px;
   font-size: 14px;
 
-  &__size, &__color {
+  &__size,
+  &__color {
     display: flex;
     justify-content: space-around;
   }
@@ -88,4 +96,41 @@
   gap: 10px;
   padding: 0 10px 10px;
   font-size: 14px;
+
+  &__button {
+    background-color: grey;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &__result {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+
+    &__url {
+        text-decoration: none;
+        color: grey;
+    }
+
+    &__whats {
+        padding: 5px;
+        border: none;
+        border-radius: 2px;
+        background-color: #25D366;
+        color: white;
+    }
+  }
 }
