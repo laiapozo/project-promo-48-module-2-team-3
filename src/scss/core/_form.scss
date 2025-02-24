@@ -9,19 +9,40 @@
 }
 
 .img-div {
-  border: 1px solid grey;
+  border: 2px solid lightgrey;
   padding: 10px;
   margin: 10px auto;
 
   &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    &__desperation {
+        background-color: lightgrey;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+
     &__image {
       width: 150px;
+    }
+
+    &__sentence {
+        font-style: italic;
+    }
+
+    &__author {
+        font-size: 10px;
     }
   }
 }
 
 .img-result {
   width: 100%;
+  border-radius: 10px;
 }
 
 .form {
