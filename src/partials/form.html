@@ -1,10 +1,19 @@
 <section class="sticker-create">
   <div class="form-div">
     <form class="form" action="" method="">
-      <fieldset>Rellena</fieldset>
+      <fieldset class="form__fill">
+        <p><i class="fa-solid fa-pen"></i> Rellena</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-fill">
         <label for="image">Sube tu imagen</label>
-        <input type="file" id="image" name="image" accept="image/*" />
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          class="div-fill__img"
+        />
         <label for="desperation"
           >Indica tu nivel de desesperación del 1 al 10</label
         >
@@ -14,9 +23,10 @@
           name="desperation"
           min="0"
           max="10"
+          class="div-fill__desperation"
         />
         <label for="sentence">Escoge la frase que mejor te represente</label>
-        <select name="sentence" id="sentence">
+        <select name="sentence" id="sentence" class="div-fill__sentence">
           <option value="select">Selecciona tu frase</option>
           <option value="process">Confía en el proceso</option>
           <option value="reverse">Me siento un poco column-reverse</option>
@@ -31,44 +41,58 @@
           name="author"
           id="author"
           placeholder="Creado por Ada"
+          class="div-fill__author"
         />
       </div>
 
-      <fieldset>Diseña</fieldset>
+      <fieldset class="form__design">
+        <p><i class="fa-solid fa-palette"></i> Diseña</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-design">
         <legend>Indica el tamaño de la letra</legend>
-        <div>
-          <input type="radio" id="12" name="size" />
-          <label for="12">12</label>
-          <input type="radio" id="14" name="size" />
-          <label for="14">14</label>
-          <input type="radio" id="16" name="size" />
-          <label for="16">16</label>
+        <div class="div-design__size">
+          <label for="12"><input type="radio" id="12" name="size" /> 12</label>
+          <label for="14"><input type="radio" id="14" name="size" /> 14</label>
+          <label for="16"><input type="radio" id="16" name="size" /> 16</label>
         </div>
         <legend>Colores</legend>
-        <div>
-          <input type="radio" id="option1" name="colors" />
-          <label for="option1">Opción 1</label>
-          <input type="radio" id="option2" name="colors" />
-          <label for="option2">Opción 2</label>
-          <input type="radio" id="option3" name="colors" />
-          <label for="option3">Opción 3</label>
+        <div class="div-design__color">
+          <label for="option1"
+            ><input type="radio" id="option1" name="colors" /> Opción 1</label
+          >
+          <label for="option2"
+            ><input type="radio" id="option2" name="colors" /> Opción 2</label
+          >
+          <label for="option3"
+            ><input type="radio" id="option3" name="colors" /> Opción 3</label
+          >
         </div>
       </div>
 
-      <fieldset>Comparte</fieldset>
+      <fieldset class="form__share">
+        <p><i class="fa-solid fa-share-nodes"></i> Comparte</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
       <div class="div-share">
-        <button>Crear sticker</button>
-        <p>¡Ya tienes aquí tu sticker!</p>
-        <a href=""></a>
-        <button>Compartir en WhatsApp</button>
+        <button class="div-share__button">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Crear sticker
+        </button>
+        <div class="div-share__result">
+          <p>¡Ya tienes aquí tu sticker!</p>
+          <a class="div-share__result__url" href="">URL</a>
+          <button class="div-share__result__whats">
+            <i class="fa-brands fa-whatsapp"></i> Compartir en WhatsApp
+          </button>
+        </div>
+        <input type="reset" value="Reset" class="reset" />
       </div>
     </form>
   </div>
 
   <div class="img-div">
     <div class="img-div__box">
-      <p>7</p>
+      <p class="img-div__box__desperation">7</p>
       <div class="img-div__box__image">
         <img
           class="img-result"
@@ -76,12 +100,8 @@
           alt="Sticker resultado"
         />
       </div>
-      <p>Frase escogida</p>
-      <p>Creado por </p>
+      <p class="img-div__box__sentence">Frase escogida</p>
+      <p class="img-div__box__author">Creado por</p>
     </div>
   </div>
 </section>
-
-<!-- // Dudas
-// Adjuntar imagen?
-// Paleta de colores? -->
