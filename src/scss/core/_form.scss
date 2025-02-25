@@ -158,22 +158,30 @@
       }
     }
   }
+}
 
-  .reset {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: lightgray;
-    color: white;
+.reset {
+  padding: 5px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+  color: white;
 
-    &:hover {
-      opacity: 80%;
-    }
+  &:hover {
+    opacity: 80%;
   }
 }
 
-.fa-pen, .fa-palette, .fa-share-nodes, .fa-caret-down {
-    color: #c93825;
+.fa-pen,
+.fa-palette,
+.fa-share-nodes,
+.fa-caret-down {
+  color: #c93825;
+}
+
+.collapsed {
+  display: none;
 }
 
 @media (min-width: 768px) {

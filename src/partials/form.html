@@ -1,11 +1,11 @@
 <section class="sticker-create">
   <div class="form-div">
     <form class="form" action="" method="">
-      <fieldset class="form__fill">
+      <fieldset class="form__fill js-form-fill">
         <p><i class="fa-solid fa-pen"></i> Rellena</p>
         <i class="fa-solid fa-caret-down"></i>
       </fieldset>
-      <div class="div-fill">
+      <div class="div-fill js-div-fill collapsed">
         <label for="image">Sube tu imagen</label>
         <input
           type="file"
@@ -45,11 +45,11 @@
         />
       </div>
 
-      <fieldset class="form__design">
+      <fieldset class="form__design js-form-design">
         <p><i class="fa-solid fa-palette"></i> Diseña</p>
         <i class="fa-solid fa-caret-down"></i>
       </fieldset>
-      <div class="div-design">
+      <div class="div-design js-div-design collapsed">
         <legend>Indica el tamaño de la letra</legend>
         <div class="div-design__size">
           <label for="12"><input type="radio" id="12" name="size" /> 12</label>
@@ -70,11 +70,11 @@
         </div>
       </div>
 
-      <fieldset class="form__share">
+      <fieldset class="form__share js-form-share">
         <p><i class="fa-solid fa-share-nodes"></i> Comparte</p>
         <i class="fa-solid fa-caret-down"></i>
       </fieldset>
-      <div class="div-share">
+      <div class="div-share js-div-share collapsed">
         <button class="div-share__button">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Crear sticker
         </button>
@@ -85,8 +85,8 @@
             <i class="fa-brands fa-whatsapp"></i> Compartir en WhatsApp
           </button>
         </div>
-        <input type="reset" value="Reset" class="reset" />
       </div>
+      <input type="reset" value="Reset" class="reset" />
     </form>
   </div>
 
