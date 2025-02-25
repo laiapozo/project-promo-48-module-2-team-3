@@ -125,7 +125,7 @@
     padding: 15px;
     margin: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
 
     &:hover {
       opacity: 80%;
@@ -152,6 +152,10 @@
       border-radius: 2px;
       background-color: #25d366;
       color: white;
+
+      &:hover {
+        opacity: 80%;
+      }
     }
   }
 
@@ -161,6 +165,10 @@
     border-radius: 5px;
     background-color: lightgray;
     color: white;
+
+    &:hover {
+      opacity: 80%;
+    }
   }
 }
 

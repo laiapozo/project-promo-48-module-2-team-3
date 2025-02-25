@@ -52,8 +52,13 @@
     &__containerbtn{
         margin-top: 80px;
         padding: 10px;
-        border-radius: 2px;
+        border-radius: 5px;
         background-color: #c93825;
+
+        &:hover {
+            opacity: 80%;
+        }
+        
         &__btn{
             text-decoration: none;
             color:white;
