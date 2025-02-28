@@ -74,7 +74,7 @@
   &__img {
     color: grey;
 
-    &::file-selector-button {
+    &::file-selector-button { // https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button
       background-color: #c93825;
       color: white;
       padding: 10px;
