@@ -1,5 +1,6 @@
 'use strict';
 
 import "./collapsables.js";
-import "./preview.js";
+import "./previewFill.js";
 import "./image.js";
+import "./previewDesign.js";

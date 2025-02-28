@@ -48,21 +48,21 @@
       </fieldset>
       <div class="div-design js-div-design collapsed">
         <legend>Indica el tamaño de la letra</legend>
-        <div class="div-design__size">
-          <label for="12"><input type="radio" id="12" name="size" /> 12</label>
-          <label for="14"><input type="radio" id="14" name="size" /> 14</label>
-          <label for="16"><input type="radio" id="16" name="size" /> 16</label>
+        <div class="div-design__size js-size">
+          <label for="small"><input type="radio" value="small" id="small" name="size" class="size" /> Pequeña</label>
+          <label for="medium"><input type="radio" value="medium" id="medium" name="size" class="size" /> Mediana</label>
+          <label for="big"><input type="radio" value="big" id="big" name="size" class="size" /> Grande</label>
         </div>
         <legend>Colores</legend>
         <div class="div-design__color">
           <label for="option1"
-            ><input type="radio" id="option1" name="colors" /> Opción 1</label
+            ><input type="radio" id="option1" name="colors" class="colors" /> Opción 1</label
           >
           <label for="option2"
-            ><input type="radio" id="option2" name="colors" /> Opción 2</label
+            ><input type="radio" id="option2" name="colors" class="colors" /> Opción 2</label
           >
           <label for="option3"
-            ><input type="radio" id="option3" name="colors" /> Opción 3</label
+            ><input type="radio" id="option3" name="colors" class="colors" /> Opción 3</label
           >
         </div>
       </div>
@@ -89,7 +89,7 @@
 
   <div class="img-div">
     <div class="img-div__box">
-      <p class="img-div__box__desperation js-desperation-preview">7</p>
+      <p class="img-div__box__desperation js-desperation-preview">Nivel de desesperación: </p>
       <div class="img-div__box__image">
         <img
           class="img-result js-img-preview js__profile-preview"

@@ -33,7 +33,7 @@ function getPreview(event) {
     //     formData.image = event.target.value;
     // }
     if (event.target.id === "desperation") {
-        previewDesperation.innerHTML = event.target.value;
+        previewDesperation.innerHTML = "Nivel de desesperación: " + event.target.value;
         formData.desperation = event.target.value;
     } else if (event.target.id === "sentence") {
         console.log(event.target.value);

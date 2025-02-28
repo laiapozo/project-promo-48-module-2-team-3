@@ -12,6 +12,8 @@
   border: 2px solid lightgrey;
   padding: 10px;
   margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 6px 9px 12px 0px grey;
 
   &__box {
     display: flex;
@@ -24,6 +26,7 @@
       color: white;
       padding: 5px 10px;
       border-radius: 15px;
+      margin-bottom: 8px;
     }
 
     &__image {
@@ -93,6 +96,11 @@
     padding: 5px;
     border: lightgrey solid 1px;
     border-radius: 5px;
+
+    &:focus {
+      box-shadow: inset 2px 2px 1px grey;
+      outline: none;
+    }
   }
 }
 
@@ -108,6 +116,10 @@
     display: flex;
     justify-content: space-around;
   }
+}
+
+.size, .colors {
+  accent-color: #c93825;
 }
 
 .div-share {
@@ -188,6 +200,7 @@
   .sticker-create {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: flex-start;
     font-family: "Roboto";
     height: 80vh;
@@ -200,10 +213,23 @@
 
   .img-div {
     height: min-content;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
 
     &__box__image {
       width: 200px;
     }
   }
+}
+
+// Clases para modificar el tamaño de la letra de la frase en la preview
+.smallSize {
+  font-size: 12px;
+}
+
+.mediumSize {
+  font-size: 16px;
+}
+
+.bigSize {
+  font-size: 20px;
 }
