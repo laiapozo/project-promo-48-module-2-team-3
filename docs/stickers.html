@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdaStickers</title>
+    <script
+      src="https://kit.fontawesome.com/50876f28ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./assets/main-2377717f.css">
+  </head>
+  <body>
+    <header>
+    <div class="container-img">
+        <a href="./index.html">
+            <img class="logo" src="./images/logo.png" alt="Logo AdaStickers">
+        </a>
+    </div>
+</header>
+    <section class="sticker-create">
+  <div class="form-div">
+    <form class="form" action="" method="">
+      <fieldset class="form__fill js-form-fill">
+        <p><i class="fa-solid fa-pen"></i> Rellena</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
+      <div class="div-fill js-div-fill collapsed">
+        <label for="image">Sube tu imagen</label>
+        <input
+          type="file"
+          id="image"
+          name="image"
+          accept="image/*"
+          class="div-fill__img js__profile-upload-btn"
+        />
+        <label for="desperation"
+          >Indica tu nivel de desesperación del 1 al 10</label
+        >
+        <input
+          type="number"
+          id="desperation"
+          name="desperation"
+          min="0"
+          max="10"
+          class="div-fill__desperation"
+        />
+        <label for="sentence">Escoge la frase que mejor te represente</label>
+        <select name="sentence" id="sentence" class="div-fill__sentence">
+          <option value="select">Selecciona tu frase</option>
+          <option value="process">Confía en el proceso</option>
+          <option value="reverse">Me siento un poco column-reverse</option>
+          <option value="crying">Crying in JavaScript</option>
+        </select>
+        <label for="author">Indica tu nombre</label>
+        <input
+          type="text"
+          name="author"
+          id="author"
+          placeholder="Creado por Ada"
+          class="div-fill__author"
+        />
+      </div>
+
+      <fieldset class="form__design js-form-design">
+        <p><i class="fa-solid fa-palette"></i> Diseña</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
+      <div class="div-design js-div-design collapsed">
+        <legend>Indica el tamaño de la letra</legend>
+        <div class="div-design__size js-size">
+          <label for="small"><input type="radio" value="small" id="small" name="size" class="size" /> Pequeña</label>
+          <label for="medium"><input type="radio" value="medium" id="medium" name="size" class="size" /> Mediana</label>
+          <label for="big"><input type="radio" value="big" id="big" name="size" class="size" /> Grande</label>
+        </div>
+        <legend>Colores</legend>
+        <div class="div-design__color js-color">
+          <label for="option1"
+            ><input type="radio" id="option1" name="colors" class="colors" value="option1" /> Opción 1</label
+          >
+          <label for="option2"
+            ><input type="radio" id="option2" name="colors" class="colors" value="option2" /> Opción 2</label
+          >
+          <label for="option3"
+            ><input type="radio" id="option3" name="colors" class="colors" value="option3" /> Opción 3</label
+          >
+        </div>
+      </div>
+
+      <fieldset class="form__share js-form-share">
+        <p><i class="fa-solid fa-share-nodes"></i> Comparte</p>
+        <i class="fa-solid fa-caret-down"></i>
+      </fieldset>
+      <div class="div-share js-div-share collapsed">
+        <button class="div-share__button">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Crear sticker
+        </button>
+        <div class="div-share__result">
+          <p>¡Ya tienes aquí tu sticker!</p>
+          <a class="div-share__result__url" href="">URL</a>
+          <button class="div-share__result__whats">
+            <i class="fa-brands fa-whatsapp"></i> Compartir en WhatsApp
+          </button>
+        </div>
+      </div>
+      <input type="reset" value="Reset" class="reset" />
+    </form>
+  </div>
+
+  <div class="img-div">
+    <div class="img-div__box">
+      <p class="img-div__box__desperation js-desperation-preview">Nivel de desesperación: </p>
+      <div class="img-div__box__image">
+        <img
+          class="img-result js-img-preview js__profile-preview"
+          src="https://i.pinimg.com/550x/09/2a/93/092a93bd0e2f183f210e1840d2c126f4.jpg"
+          alt="Sticker resultado"
+        />
+      </div>
+      <p class="img-div__box__sentence js-txt-preview">Frase escogida</p>
+      <p class="img-div__box__author js-author-preview">Creado por</p>
+    </div>
+  </div>
+</section>
+
+    <footer>
+    <p class="copy">Copyright &copy;2025 | AdaStickers</p>
+    <div class="foot-img">
+        <img class="foot-img__foot-logo" src="./images/logo-adalab.svg" alt="Logo AdaStickers">
+    </div>
+</footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
