@@ -1,4 +1,3 @@
-"use strict";
 
 /*
 - Crear clase collapsed (display: none)
