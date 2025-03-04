@@ -1,6 +1,6 @@
 <img src="./public/images/logo.png" alt="drawing" width="200"/>
 
-**¿Eres una programadora desesperada y necesita echarse unas risas para soltar tensiones? ¡Ésta es tu pagina!** 
+**¿Eres una programadora desesperada y necesitas echarte unas risas para soltar tensiones? ¡Ésta es tu pagina!** 
 Aquí podras crear los stickers de gatitos más divertidos con frases propias de una verdadera programadora web.
 
 El acceso directo a nuestra página web es: https://laum25.github.io/project-promo-48-module-2-team-3/
