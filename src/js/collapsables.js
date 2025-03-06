@@ -22,20 +22,25 @@ const fillBox = document.querySelector(".js-div-fill");
 const designBox = document.querySelector(".js-div-design");
 const shareBox = document.querySelector(".js-div-share");
 
-fill.addEventListener("click", () => {
-    fillBox.classList.toggle("collapsed");
-    designBox.classList.add("collapsed");
-    shareBox.classList.add("collapsed");
-})
 
-design.addEventListener("click", () => {
-    designBox.classList.toggle("collapsed");
-    fillBox.classList.add("collapsed");
-    shareBox.classList.add("collapsed");
-})
+const collapsableHeaders = document.querySelectorAll(".js-header-collapsable");
+console.log(collapsableHeaders);
+const handleClickCollapsable = (ev) => {
+    if (ev.currentTarget.classList.contains("js-form-fill")) {
+        fillBox.classList.toggle("collapsed");
+        designBox.classList.add("collapsed");
+        shareBox.classList.add("collapsed");
+    } else if (ev.currentTarget.classList.contains("js-form-design")) {
+        designBox.classList.toggle("collapsed");
+        fillBox.classList.add("collapsed");
+        shareBox.classList.add("collapsed");
+    } else {
+        shareBox.classList.toggle("collapsed");
+        fillBox.classList.add("collapsed");
+        designBox.classList.add("collapsed");
+    }
+}
 
-share.addEventListener("click", () => {
-    shareBox.classList.toggle("collapsed");
-    fillBox.classList.add("collapsed");
-    designBox.classList.add("collapsed");
-})
+for (const header of collapsableHeaders) {
+    header.addEventListener("click", handleClickCollapsable);
+}

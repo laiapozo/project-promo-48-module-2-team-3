@@ -195,6 +195,21 @@
   display: none;
 }
 
+.color-red {
+  background-color: #c93825;
+  padding: 10px 30px;
+}
+
+.color-adalab {
+  background-color: #2f9f8d;
+  padding: 10px 30px;
+}
+
+.color-grey {
+  background-color: #333;
+  padding: 10px 30px;
+}
+
 @media (min-width: 768px) {
   .sticker-create {
     display: flex;
