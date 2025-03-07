@@ -1,0 +1,43 @@
+.main-stickers {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 6px 9px 12px 0px grey;
+
+  &__desperation {
+    background-color: lightgrey;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+  }
+
+  &__image {
+    width: 300px;
+
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
+
+  &__sentence {
+    font-style: italic;
+  }
+
+  &__author {
+    font-size: 10px;
+  }
+}
