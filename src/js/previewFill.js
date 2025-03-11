@@ -13,12 +13,12 @@ const previewTxt = document.querySelector(".js-txt-preview");
 const previewAuthor = document.querySelector(".js-author-preview");
 
 const formData = {
-    image: "",
-    desperation: 0,
-    sentence: "",
-    author: "",
-    size: 0,
-    colors: "",
+    field1: 0,
+    field2: "",
+    field3: "",
+    field4: "",
+    field5: "",
+    photo: "",
 }
 
 function getPreview(event) {
@@ -34,30 +34,27 @@ function getPreview(event) {
     // }
     if (event.target.id === "desperation") {
         previewDesperation.innerHTML = "Nivel de desesperación: " + event.target.value;
-        formData.desperation = event.target.value;
+        formData.field1 = event.target.value;
     } else if (event.target.id === "sentence") {
-        console.log(event.target.value);
         // formData.sentence = event.target.options[parseInt(event.target.value)].text;
         // previewTxt.innerHTML = event.target.options[parseInt(event.target.value)].text;
         //  ¡¡¡ FORMA MáS AVANZADA DE HACERLO!!!
         if (event.target.value === "select") {
             previewTxt.innerHTML = select;
-            formData.sentence = select;
         } else if (event.target.value === "process") {
             previewTxt.innerHTML = process;
-            formData.sentence = process;
         } else if (event.target.value === "reverse") {
             previewTxt.innerHTML = reverse;
-            formData.sentence = reverse;
         } else if (event.target.value === "crying") {
             previewTxt.innerHTML = crying;
-            formData.sentence = crying;
         }
+
+        formData.field2 = event.target.value;
     } else if (event.target.id === "author") {
         previewAuthor.innerHTML = "Creado por " + event.target.value;
+        formData.field3 =  "Creado por " + event.target.value;
     }
     
 }
 
 fillBox.addEventListener("input", getPreview);
-

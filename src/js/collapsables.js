@@ -24,7 +24,6 @@ const shareBox = document.querySelector(".js-div-share");
 
 
 const collapsableHeaders = document.querySelectorAll(".js-header-collapsable");
-console.log(collapsableHeaders);
 const handleClickCollapsable = (ev) => {
     if (ev.currentTarget.classList.contains("js-form-fill")) {
         fillBox.classList.toggle("collapsed");

@@ -27,6 +27,7 @@ function getImage(e) {
 function writeImage() {
   // profileImage.src = fr.result; PENDIENTE DE AÑADIR CUADRADO
   profilePreview.src = fr.result;
+  formData.photo = fr.result;
 
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado. Ese resultado de procesar el fichero que hemos cargado
