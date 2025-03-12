@@ -6,17 +6,19 @@ const textCard = document.querySelector(".js-txt-result");
 const authorCard = document.querySelector(".js-author-result");
 
 const urlParam = new URLSearchParams(window.location.search);
-console.log(urlParam);
 const id = urlParam.get("id");
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
   .then((data) => {
     const targetData = data.data;
-    console.log(targetData);
+    
     desperationCard.innerHTML += targetData.field1;
+
     imageCard.src = targetData.photo;
+
     authorCard.innerHTML = targetData.field3;
+
     if (targetData.field2 === "select") {
       textCard.innerHTML = "Selecciona tu frase";
     } else if (targetData.field2 === "process") {
