@@ -21,4 +21,3 @@ const handleCreateCard = (event) => {
 };
 
 cardButton.addEventListener("click", handleCreateCard);
-
