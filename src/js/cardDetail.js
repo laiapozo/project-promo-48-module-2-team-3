@@ -2,13 +2,13 @@
 
 console.log("funciono!!!!");
 
-// const desperationCard = document.querySelector(".js-desperation-result");
-// const imageCard = document.querySelector(".js-img-result");
-// const textCard = document.querySelector(".js-txt-result");
-// const authorCard = document.querySelector(".js-author-result");
+const desperationCard = document.querySelector(".js-desperation-result");
+const imageCard = document.querySelector(".js-img-result");
+const textCard = document.querySelector(".js-txt-result");
+const authorCard = document.querySelector(".js-author-result");
 
-// const urlParam = new URLSearchParams(window.location.search);
-// const id = urlParam.get("id");
+const urlParam = new URLSearchParams(window.location.search);
+const id = urlParam.get("id");
 
 // fetch(`https://dev.adalab.es/api/info/${id}`)
 //   .then((response) => response.json())
