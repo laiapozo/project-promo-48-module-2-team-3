@@ -8,7 +8,7 @@ const authorCard = document.querySelector(".js-author-result");
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
-fetch(`https://dev.adalab.es/api/info/:${id}`)
+fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
   .then((data) => {
 
@@ -59,4 +59,3 @@ fetch(`https://dev.adalab.es/api/info/:${id}`)
     }
 
   })
-  .catch((error) => console.error("Error en la petición:", error));
