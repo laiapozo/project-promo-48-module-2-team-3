@@ -1,5 +1,6 @@
 "use strict";
-console.log("funciono");
+
+console.log("funciono!!!!");
 
 // const desperationCard = document.querySelector(".js-desperation-result");
 // const imageCard = document.querySelector(".js-img-result");
