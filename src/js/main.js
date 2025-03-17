@@ -6,3 +6,4 @@ import "./image.js";
 import "./previewDesign.js";
 import "./previewReset.js";
 import "./cardResult.js";
+import "./cardDetail.js";
