@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const desperationCard = document.querySelector(".js-desperation-result");
 const imageCard = document.querySelector(".js-img-result");
@@ -8,10 +8,11 @@ const authorCard = document.querySelector(".js-author-result");
 const urlParam = new URLSearchParams(window.location.search);
 const id = urlParam.get("id");
 
+console.log(`Fetching URL: https://dev.adalab.es/api/info/${id}`);
+
 fetch(`https://dev.adalab.es/api/info/${id}`)
   .then((response) => response.json())
   .then((data) => {
-
     const targetData = data.data;
 
     desperationCard.innerHTML += targetData.field1;
@@ -57,7 +58,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
       textCard.classList.remove("color1", "color2");
       desperationCard.classList.remove("background1", "background2");
     }
-
   })
   .catch((error) => console.error("Error en la petición:", error));
-
