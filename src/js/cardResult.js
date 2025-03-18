@@ -16,7 +16,7 @@ const handleCreateCard = (event) => {
       const idCard = data.infoID;
       shareResult.classList.remove("collapsed");
       linkCard.href = `./result.html?id=${idCard}`;
-      whatsapp.href += `./result.html?id=${idCard}`
+      whatsapp.href += `https://laum25.github.io/project-promo-48-module-2-team-3/result.html?id=${idCard}`
     });
 };
 
