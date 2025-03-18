@@ -17,7 +17,7 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
 
     imageCard.src = targetData.photo;
 
-    authorCard.innerHTML = targetData.field3;
+    authorCard.innerHTML = targetData.field3.toUpperCase();
 
     if (targetData.field2 === "select") {
       textCard.innerHTML = "Selecciona tu frase";
