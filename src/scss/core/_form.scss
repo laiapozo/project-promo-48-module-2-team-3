@@ -63,6 +63,11 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(0, 0, 0, 0.03);
+    }
   }
 }
 
@@ -76,12 +81,14 @@
   &__img {
     color: grey;
 
-    &::file-selector-button { // https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button
+    &::file-selector-button {
+      // https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button
       background-color: #c93825;
       color: white;
       padding: 10px;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
 
       &:hover {
         opacity: 80%;
@@ -117,7 +124,8 @@
   }
 }
 
-.size, .colors {
+.size,
+.colors {
   accent-color: #c93825;
 }
 
@@ -137,6 +145,7 @@
     margin: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
     &:hover {
       opacity: 80%;
@@ -155,6 +164,10 @@
     &__url {
       text-decoration: none;
       color: grey;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     &__whats {
@@ -166,6 +179,11 @@
 
       &:hover {
         opacity: 80%;
+      }
+
+      & a {
+        color: white;
+        text-decoration: none;
       }
     }
   }
@@ -181,6 +199,7 @@
 
   &:hover {
     opacity: 80%;
+    cursor: pointer;
   }
 }
 
@@ -251,24 +270,24 @@
 // Clases para modificar los colores de la letra en la preview
 
 .background1 {
-    background-color:#c93825;
+  background-color: #c93825;
 }
 
 .background2 {
-    background-color: #2f9f8d;
-} 
+  background-color: #2f9f8d;
+}
 
 .background3 {
-    background-color: #333;
+  background-color: #333;
 }
 
 .color1 {
-  color:#c93825;
+  color: #c93825;
 }
 
 .color2 {
   color: #2f9f8d;
-} 
+}
 
 .color3 {
   color: #333;

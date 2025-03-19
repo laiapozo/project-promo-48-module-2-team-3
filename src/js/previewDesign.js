@@ -13,16 +13,18 @@ const inputColor = document.querySelector(".js-color");
 // La constante previewTxt la creamos en previewFill.js
 
 const changeClassSentence = (event) => {
-    if (event.target.value === "small") {
-        previewTxt.classList.add("smallSize");
-        previewTxt.classList.remove("mediumSize", "bigSize");
-    } else if (event.target.value === "medium") {
-        previewTxt.classList.add("mediumSize");
-        previewTxt.classList.remove("smallSize", "bigSize");
-    } else if (event.target.value === "big") {
-        previewTxt.classList.add("bigSize");
-        previewTxt.classList.remove("mediumSize", "smallSize");
-    }
+  if (event.target.value === "small") {
+    previewTxt.classList.add("smallSize");
+    previewTxt.classList.remove("mediumSize", "bigSize");
+  } else if (event.target.value === "medium") {
+    previewTxt.classList.add("mediumSize");
+    previewTxt.classList.remove("smallSize", "bigSize");
+  } else if (event.target.value === "big") {
+    previewTxt.classList.add("bigSize");
+    previewTxt.classList.remove("mediumSize", "smallSize");
+  }
+
+  formData.field4 = event.target.value;
 };
 
 inputSize.addEventListener("input", changeClassSentence);
@@ -37,23 +39,24 @@ Cuando la usuaria escoja el input:
 */
 
 const changeColor = (ev) => {
-        if (ev.target.value === "option1") {
-            previewTxt.classList.add("color1");
-            previewDesperation.classList.add("background1");
-            previewTxt.classList.remove("color2", "color3");
-            previewDesperation.classList.remove("background2", "background3");
-        } else if (ev.target.value === "option2") {
-            previewTxt.classList.add("color2");
-            previewDesperation.classList.add("background2");
-            previewTxt.classList.remove("color1", "color3");
-            previewDesperation.classList.remove("background1", "background3");
-        } else if (ev.target.value === "option3") {
-            previewTxt.classList.add("color3");
-            previewDesperation.classList.add("background3");
-            previewTxt.classList.remove("color1", "color2");
-            previewDesperation.classList.remove("background1", "background2");
-        }
+  if (ev.target.value === "option1") {
+    previewTxt.classList.add("color1");
+    previewDesperation.classList.add("background1");
+    previewTxt.classList.remove("color2", "color3");
+    previewDesperation.classList.remove("background2", "background3");
+  } else if (ev.target.value === "option2") {
+    previewTxt.classList.add("color2");
+    previewDesperation.classList.add("background2");
+    previewTxt.classList.remove("color1", "color3");
+    previewDesperation.classList.remove("background1", "background3");
+  } else if (ev.target.value === "option3") {
+    previewTxt.classList.add("color3");
+    previewDesperation.classList.add("background3");
+    previewTxt.classList.remove("color1", "color2");
+    previewDesperation.classList.remove("background1", "background2");
+  }
 
-}
+  formData.field5 = ev.target.value;
+};
 
 inputColor.addEventListener("input", changeColor);

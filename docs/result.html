@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/50876f28ea.js" crossorigin="anonymous"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/50876f28ea.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
     
     <title>AdaStickers</title>
-  <link rel="stylesheet" href="./assets/main-4c00ba4a.css">
-</head>
+    <link rel="stylesheet" href="./assets/main-a5d7390b.css">
+  </head>
 
-<body>
+  <body>
     <header>
     <div class="container-img">
         <a href="./index.html">
@@ -25,18 +28,18 @@
 </header>
     <main class="main-stickers">
   <div class="result">
-    <p class="result__desperation js-desperation-preview">
+    <p class="result__desperation js-desperation-result">
       Nivel de desesperación:
     </p>
     <div class="result__image">
       <img
-        class="result__image__img js-img-preview js__profile-preview"
+        class="result__image__img js-img-result"
         src="https://i.pinimg.com/550x/09/2a/93/092a93bd0e2f183f210e1840d2c126f4.jpg"
-        alt="Sticker resultado"
+        alt="Sticker final"
       />
     </div>
-    <p class="result__sentence js-txt-preview">Frase escogida</p>
-    <p class="result__author js-author-preview">Creado por</p>
+    <p class="result__sentence js-txt-result"></p>
+    <p class="result__author js-author-result"></p>
   </div>
 </main>
 
@@ -46,7 +49,67 @@
         <img class="foot-img__foot-logo" src="./images/logo-adalab.svg" alt="Logo AdaStickers">
     </div>
 </footer>
-    <script src="./js/main.js"></script>
-</body>
+    <script type="text/javascript">
+      "use strict";
 
+      const desperationCard = document.querySelector(".js-desperation-result");
+      const imageCard = document.querySelector(".js-img-result");
+      const textCard = document.querySelector(".js-txt-result");
+      const authorCard = document.querySelector(".js-author-result");
+
+      const urlParam = new URLSearchParams(window.location.search);
+      const id = urlParam.get("id");
+
+      fetch(`https://dev.adalab.es/api/info/${id}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const targetData = data.data;
+
+          desperationCard.innerHTML += targetData.field1;
+
+          imageCard.src = targetData.photo;
+
+          authorCard.innerHTML = targetData.field3.toUpperCase();
+
+          if (targetData.field2 === "select") {
+            textCard.innerHTML = "Selecciona tu frase";
+          } else if (targetData.field2 === "process") {
+            textCard.innerHTML = "Confía en el proceso";
+          } else if (targetData.field2 === "reverse") {
+            textCard.innerHTML = "Me siento un poco column-reverse";
+          } else if (targetData.field2 === "crying") {
+            textCard.innerHTML = "Crying in JavaScript";
+          }
+
+          if (targetData.field4 === "small") {
+            textCard.classList.add("smallSize");
+            textCard.classList.remove("mediumSize", "bigSize");
+          } else if (targetData.field4 === "medium") {
+            textCard.classList.add("mediumSize");
+            textCard.classList.remove("smallSize", "bigSize");
+          } else if (targetData.field4 === "big") {
+            textCard.classList.add("bigSize");
+            textCard.classList.remove("mediumSize", "smallSize");
+          }
+
+          if (targetData.field5 === "option1") {
+            textCard.classList.add("color1");
+            desperationCard.classList.add("background1");
+            textCard.classList.remove("color2", "color3");
+            desperationCard.classList.remove("background2", "background3");
+          } else if (targetData.field5 === "option2") {
+            textCard.classList.add("color2");
+            desperationCard.classList.add("background2");
+            textCard.classList.remove("color1", "color3");
+            desperationCard.classList.remove("background1", "background3");
+          } else if (targetData.field5 === "option3") {
+            textCard.classList.add("color3");
+            desperationCard.classList.add("background3");
+            textCard.classList.remove("color1", "color2");
+            desperationCard.classList.remove("background1", "background2");
+          }
+        })
+        .catch((error) => console.error("Error en la petición:", error));
+    </script>
+  </body>
 </html>

@@ -10,38 +10,28 @@ El acceso directo a nuestra página web es: https://laum25.github.io/project-pro
 Os dejamos un ejemplo de nuestra página con algunas opciones seleccionadas:
 ![ejemplo página del proyecto](./public/images/Proyecto%20readme.jpg)
 
+#### Arrancar el proyecto
+1. Clona este repositorio:
+   ```sh
+   git clone https://github.com/LauM25/project-promo-48-module-2-team-3.git
+   ```
+2. Abre una terminal
+3. Instala las dependencias locales ejecutando en la terminal el comando:
+    ```sh
+   npm install
+   ```
+4. Arranca el proyecto con el comando:
+   ```sh
+   npm run dev
+   ```
+#### Tecnologías utilizadas
 Para llevar a cabo este proyecto utilizamos:
 - **HTML Y CSS**
-- **JAVA SCRIPT**
+- **JAVASCRIPT**
 - **GIT Y GITHUB**
 
-Para nosotras es importante **destacar** que supuso todo un **reto** darle vida a la sección de **rellena**, por ello os dejamos un **fragmento** del código elaborado:
-
-```js
-    if (event.target.id === "desperation") {
-        previewDesperation.innerHTML = "Nivel de desesperación: " + event.target.value;
-        formData.desperation = event.target.value;
-    } else if (event.target.id === "sentence") {
-        console.log(event.target.value);
-        if (event.target.value === "select") {
-            previewTxt.innerHTML = select;
-            formData.sentence = select;
-        } else if (event.target.value === "process") {
-            previewTxt.innerHTML = process;
-            formData.sentence = process;
-        } else if (event.target.value === "reverse") {
-            previewTxt.innerHTML = reverse;
-            formData.sentence = reverse;
-        } else if (event.target.value === "crying") {
-            previewTxt.innerHTML = crying;
-            formData.sentence = crying;
-        }
-    } else if (event.target.id === "author") {
-        previewAuthor.innerHTML = "Creado por " + event.target.value;
-    }
-   ```
-   #### AUTORAS DEL PROYECTO
-   >- Laura Montiel
-   >- Laia Pozo
-   >- Andrea Chust
+#### Autoras del proyecto
+>- Laura Montiel
+>- Laia Pozo
+>- Andrea Chust
 
